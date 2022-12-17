@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(249, 223, 192);
+}
+ul li{
+  cursor: pointer;
+}
+/*--------------------------Card-------------------*/
+.card{
+  width: 350px;
+  height: 500px;
+  border: 0px solid red;
+}
+.card-number{
+  border: 1px solid red;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50%;
+}
+.card-body{
+  padding: 10px;
+}
+.card-author{
+  color: red;
+  font-weight: 800;
+}
+.card-read{
+  border: 0px solid red;
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+}
+.card-read span {
+  border: 2px solid rgb(112, 110, 107);
+  color: red;
+  font-weight: 700;
+  padding: 2px 20px;
+}
+.card-media{
+  height: 240px;
+  width: 290px;
+  margin-left: 20px;
+}
+.card-order{
+  border: 0px solid red;
+  padding-right: 45px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+}
+.card-order span{
+  border: 2px solid rgb(105, 90, 90);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.section-layout{
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-row: auto auto auto auto;
+  grid-gap:30px;
+  padding: 20px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  border: 0px solid red;
+}
+.btn-group{
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background-color:rgb(255, 244, 244);
+}
+ .btn-group-item{
+   padding: 10px;
+   box-sizing: border-box;
+   border: none;
+   background: none;
+}
+.btn-group-item:hover{
+  border-bottom:5px solid purple ;
+}
+@media(max-width:960px){
+  .section-layout{
+    display: grid;
+    grid-template-columns: auto auto  ;
+    grid-row: auto auto auto auto;
+    grid-gap:30px;
+    padding: 20px;
+  }
+}
+@media(max-width:800px){
+  .section-layout{
+    display: grid;
+    grid-template-columns: auto   ;
+    grid-row: auto auto auto auto auto auto auto;
+    grid-gap:30px;
+    padding: 20px;
+    place-items: center;
+  }
+  .btn-group{
+    width: 70%;
+  }
+}
